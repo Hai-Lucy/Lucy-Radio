@@ -1,0 +1,11 @@
+{
+    "deleteMessage": {
+        "label": "Hapus Pesan"
+    },
+    "yes": {
+        "label": "Oke"
+    },
+    "no": {
+        "label": "Tidak"
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "play": {
+        "name": "putar",
+        "description": "Putar Musik Lofi",
+        "options": {
+            "station": {
+                "name": "stasiun",
+                "description": "Stasiun yang akan diputar"
+            }
+        }
+    },
+    "add": {
+        "name": "tambah",
+        "description": "Tambahkan stasiun ke antrian",
+        "options": {
+            "station": {
+                "name": "stasiun",
+                "description": "Stasiun yang akan ditambahkan ke antrian"
+            }
+        }
+    },
+    "autoadd": {
+        "name": "autoadd",
+        "description": "Toggle penambahan musik otomatis di akhir musik",
+        "options": {}
+    },
+    "find": {
+        "name": "cari",
+        "description": "Cari beberapa stasiun yang Anda sukai menggunakan tag",
+        "options": {
+            "tags": {
+                "name": "tag",
+                "description": "Tag yang ingin Anda cari"
+            }
+        }
+    },
+    "help": {
+        "name": "bantuan",
+        "description": "Tampilkan halaman bantuan",
+        "options": {
+            "command": {
+                "name": "perintah",
+                "description": "Perintah untuk menampilkan bantuan"
+            }
+        }
+    },
+    "info": {
+        "name": "info",
+        "description": "Tampilkan informasi",
+        "options": {
+            "bot": {
+                "name": "bot",
+                "description": "Tampilkan informasi bot"
+            },
+            "station": {
+                "name": "stasiun",
+                "description": "Tampilkan informasi stasiun"
+            },
+            "stationOption": {
+                "name": "stasiun",
+                "description": "Stasiun yang akan ditampilkan"
+            }
+        }
+    },
+    "leave": {
+        "name": "tinggalkan",
+        "description": "Keluar dari saluran suara",
+        "options": {}
+    },
+    "playing": {
+        "name": "sedang-putar",
+        "description": "Tampilkan musik saat ini",
+        "options": {}
+    },
+    "suggestion": {
+        "name": "saran",
+        "description": "Sarankan musik lofi ke bot",
+        "options": {
+            "url": {
+                "name": "url",
+                "description": "URL video yang ingin Anda sarankan"
+            }
+        }
+    },
+    "switch": {
+        "name": "ganti",
+        "description": "Beralih ke stasiun musik lain",
+        "options": {
+            "station": {
+                "name": "stasiun",
+                "description": "Stasiun yang akan diganti"
+            }
+        }
+    },
+    "volume": {
+        "name": "volume",
+        "description": "Atur volume pemutar musik",
+        "options": {
+            "volume": {
+                "name": "volume",
+                "description": "Jumlah volume"
+            }
+        }
+    },
+    "guide": {
+        "name": "panduan",
+        "description": "Tampilkan panduan Lucy Radio bot",
+        "options": {}
+    }
+}

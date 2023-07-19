@@ -1,0 +1,267 @@
+{
+    "stationAutocomplete": {
+        "recommendationName": "rekomendasi",
+        "recommendationContent": "dapatkan rekomendasi hari ini",
+        "randomName": "acak",
+        "randomContent": "dapatkan stasiun acak"
+    },
+    "testerEditComment": {
+        "modalTitle": "Komentar",
+        "modalTextInputName": "Komentar",
+        "modalPlaceholder": "Sunting komentar Anda tentang {{stationEmoji}} {{stationName}} di sini",
+        "commentFieldName": "Komentar"
+    },
+    "testerButtonNames": {
+        "editComment": "Sunting komentar",
+        "deleteComment": "Hapus komentar",
+        "keywords": "Kata Kunci",
+        "sendFeedback": "Kirim",
+        "cancel": "Batal"
+    },
+    "instantInfo": {
+        "title": "Informasi Instan",
+        "description": "Informasi instan tentang <@{{clientId}}>",
+        "uptimeName": "Waktu Aktif",
+        "uptimeValue": "Online <t:{{uptime}}:R> ( <t:{{uptime}}:F> )",
+        "memberCountName": "Jumlah Anggota",
+        "memberCountValue": "{{membercount}} anggota di {{guilds}} server",
+        "playingInName": "Sedang Diputar di",
+        "playingInValue": "{{guilds}} server",
+        "stationsName": "Stasiun",
+        "stationsValue": "{{stationsCount}} stasiun, {{testerCount}} tester, dan {{keywords}} kata kunci",
+        "pingName": "Ping",
+        "pingValue": "Websocket: `{{websocket}}ms`\nRespon ke interaksi ini: `{{response}}ms`",
+        "memory": "Memori",
+        "testedName": "Stasiun yang Diuji",
+        "testedValue": "{{count}} stasiun telah diuji (sekitar {{percent}}%)"
+    },
+    "utils": {
+        "notAllowedToInteract": ":x: | Anda tidak diizinkan untuk berinteraksi dengan pesan ini",
+        "stationNotFound": ":x: | Musik tidak ditemukan",
+        "stationTypeStation": "stasiun",
+        "stationTypeRadio": "radio",
+        "commandCanceled": "💡 | Perintah dibatalkan",
+        "actionCanceled": "💡 | Tindakan dibatalkan"
+    },
+    "addCommand": {
+        "addAtEndOfRadio": ":x: | Anda tidak dapat menambahkan stasiun setelah stasiun tanpa akhir",
+        "added": "🎧 | Tambahkan [{{stationEmoji}} {{stationName}}](<{{stationUrl}}>) ke antrian"
+    },
+    "autoAdd": {
+        "positive": "diaktifkan",
+        "negative": "dinonaktifkan",
+        "reply": "🎧 | Loop telah di**{{state}}**"
+    },
+    "findCommand": {
+        "noStation": "Tidak ada stasiun",
+        "noStationDescription": "Maaf, saya tidak menemukan stasiun yang sesuai dengan pencarian Anda.",
+        "testerPromotion": "\nBeberapa stasiun belum diuji. Jika Anda ingin, Anda dapat berpartisipasi dalam program kami dengan menjadi tester lagu.\nGunakan perintah `/guide` untuk informasi lebih lanjut",
+        "matching": "Stasiun",
+        "matchingDescription": "Saya menemukan {{availableLength}}** stasiun yang sesuai dengan pencarian Anda",
+        "pickedUp": ". Saya memilih **{{selectorOptionsLength}}** dari mereka"
+    },
+    "guide": {
+        "title": "Panduan Lucy Radio bot",
+        "intro": "Ini adalah panduan bot Lucy Radio.",
+        "playMusic": "**Putar musik**\nUntuk memutar musik di Lucy Radio, gunakan perintah {{play}} diikuti oleh lagu yang ingin Anda dengarkan. Pilihan ini bersifat opsional. Jika Anda tidak menyediakan lagu, akan dipilih secara acak.",
+        "recommendation": "**Sistem Rekomendasi**\nSetiap hari, pembuat saya menempatkan lagu yang dia sukai di bot dan Anda dapat mendengarkannya dengan menggunakan perintah {{play}}.\nUntuk mendapatkan rekomendasi, mulai ketik `rekomendasi` di input teks.\nPilihan bernama `❤️ rekomendasi - dapatkan rekomendasi hari ini` akan muncul. Klik untuk memutar rekomendasi",
+        "songAddition": "**Penambahan Lagu :**\nKetika Anda telah mulai mendengarkan musik, Anda dapat menambahkan lagu lain yang akan diputar setelah lagu pertama selesai. Gunakan perintah {{add}} untuk menambahkan lagu.",
+        "autoadd": "**Sistem Penambahan Otomatis :**\nKetika Anda telah mulai mendengarkan musik, Anda mungkin ingin mendengarkan musik lofi selamanya, jadi gunakan perintah {{autoadd}} untuk mengaktifkan mode ini.",
+        "protip": "💡 *pro-tip*\nKetika Anda sedang mendengarkan musik, Anda dapat menggunakan perintah {{playing}} untuk melihat apa yang sedang diputar",
+        "feedback": "**Sistem Umpan Balik :**\nJika Anda ingin mendapatkan umpan balik tentang sebuah lagu, Anda dapat melihatnya dengan menggunakan perintah {{info}} (menggunakan subperintah `stasiun`), atau perintah {{playing}}, jika ada umpan balik yang dikirim, itu akan muncul.\nJika Anda ingin membuat umpan balik Anda sendiri, Anda dapat menjadi tester lagu dengan menghubungi pemilik bot. Anda dapat melakukannya dengan bergabung ke [server dukungan]({{support}}), atau mengakses dukungan kami melalui [halaman top.gg]({{topgg}})",
+        "suggestionsName": "Saran",
+        "suggestions": "Jika Anda memiliki saran lagu Lofi (dari [Lofi Channel](https://youtube.com/c/LofiGirl) atau [Lofi Records](https://youtube.com/@LofiRecords) channel), Anda dapat mengirimkannya kepada kami.\nGunakan perintah {{suggestion}} untuk mengirimkan lagu",
+        "lucyradio": "Jika Anda ingin menambahkan bot, Anda dapat menambahkan [Lucy Radio]({{link}})"
+    },
+    "help": {
+        "commandEmbedTitle": "Perintah {{commandName}}",
+        "permissionsName": "Izin",
+        "adminIfNotAlone": "Administrator jika pengguna tidak sendirian di saluran",
+        "GuildOnly": "Dapat digunakan dalam pesan langsung",
+        "help": "Halaman Bantuan",
+        "description": "Berikut ini adalah daftar perintah yang tersedia:\n{{list}}",
+        "more": "Bantuan lebih lanjut",
+        "moreValue": "Jika Anda membutuhkan bantuan lebih lanjut, gunakan perintah `guide`",
+        "noPermission": "Tidak diperlukan izin"
+    },
+    "infoBot": {
+        "title": "Informasi Bot",
+        "description": "Saya adalah bot yang dapat memutar musik lo-fi di server Anda",
+        "links": "Tautan",
+        "linksContent": "[Undang saya]({{lucyradio}})\n[Kode sumber](https://github.com/lrmn7/Lucy-Radio)\n[Top.gg]({{topgg}})\n[Instagram](https://www.instagram.com/romanroman.nya/)",
+        "recommendation": "❤️ Rekomendasi hari ini"
+    },
+    "infoStation": {
+        "linkName": "🔗 Tautan",
+        "peoplesOpinion": "Opini orang-orang: ",
+        "recommendationOfTheDay": "rekomendasi hari ini",
+        "duration": "🎧 Durasi",
+        "durationTypeStation": "stasiun",
+        "durationTypeLive": "Langsung"
+    },
+    "leave": {
+        "reply": "🎧 | Saya meninggalkan saluran suara"
+    },
+    "play": {
+        "reply": "🎧 | Memutar [{{stationEmoji}} {{stationName}}](<{{stationUrl}}>) di <#{{channelId}}>",
+        "errored": "❌ | Terjadi kesalahan saat menghubungkan ke saluran suara. Harap coba lagi nanti. Jika kesalahan terus muncul, hubungi server dukungan."
+    },
+    "playing": {
+        "description": "Anda sedang mendengarkan [{{stationEmoji}} {{stationName}}]({{stationUrl}})",
+        "descriptionWithTrack": "Anda sedang mendengarkan [{{stationEmoji}} {{stationName}}]({{stationUrl}}) ( {{trackName}} )",
+        "duration": "{{emoji}} Durasi",
+        "volume": "🎧 Volume",
+        "following": "🎹 Mengikuti",
+        "followingValue": "{{size}} pengikut{{optionalS}}",
+        "loopName": "🔁 Loop",
+        "loopValue": "Penambahan otomatis di**aktifkan**"
+    },
+    "suggest": {
+        "invalidVideo": "❌ | Ini bukan URL video yang valid",
+        "onlyFromLofi": "❌ | Anda hanya dapat mengusulkan video dari [Lofi Girl](https://youtube.com/c/LofiGirl) atau [Lofi Records](https://youtube.com/@LofiRecords) channel",
+        "alreadyExists": "{{stationEmoji}} | Lagu ini sudah ada dalam daftar lagu saya",
+        "errorOccured": "❌ | Terjadi kesalahan saat mengirim pesan ke pemilik",
+        "sended": "🎧 | [Saran Anda]({{url}}) telah dikirim ke pemilik bot"
+    },
+    "switch": {
+        "switched": "🎧 | Beralih ke [{{stationEmoji}} {{stationName}}]({{stationUrl}})"
+    },
+    "volume": {
+        "reply": "🔊 | Volume diatur ke **{{amount}}%**"
+    },
+    "commandDenied": {
+        "GuildOnly": "Perintah ini tidak dapat digunakan dalam pesan langsung",
+        "underCooldown": "Anda memiliki cooldown selama {{cooldown}} detik pada perintah ini",
+        "userMissingPerms": "Anda memerlukan izin {{required}} untuk menjalankan perintah ini. Anda memiliki izin {{has}}",
+        "clientMissingPerms": "Saya memerlukan izin {{required}} untuk menjalankan perintah ini. Saya memiliki izin {{has}}"
+    },
+    "preconditions": {
+        "adminIfNotAlone": "❌ | Karena Anda tidak sendirian, Anda memerlukan izin `administrator` untuk menjalankan perintah ini",
+        "botOwner": "❌ | Anda tidak diizinkan untuk berinteraksi dengan pesan ini",
+        "connected": "❌ | Anda tidak terhubung ke saluran suara",
+        "connectedSameChannel": "❌ | Anda tidak terhubung di saluran yang sama dengan saya",
+        "isNotAdded": "❌ | Stasiun ini sudah ada",
+        "playing": "❌ | Saya tidak memutar musik",
+        "suggestChannel": "⚙️ | Saluran saran tidak dikonfigurasi oleh pemilik bot",
+        "waitTwenty": "{{emoji}} | Harap tunggu **20 detik** sebelum menghapus pesan ini"
+    },
+    "formatTime": {
+        "hours": "jam",
+        "minutes": "menit",
+        "seconds": "detik",
+        "joiner": "dan"
+    },
+    "acceptButton": {
+        "modalTitle": "Data Stasiun",
+        "nameName": "Nama",
+        "authorName": "Penulis Musik",
+        "authorNotFound": "Penulis tidak ditemukan",
+        "beatsName": "Beat",
+        "emojiName": "Emoji",
+        "emojiDefaultValue": "Emoji",
+        "added": "🎧 | Musik ditambahkan",
+        "addedData": "Musik ditambahkan"
+    },
+    "addComment": {
+        "modalName": "Komentar",
+        "commentName": "Komentar",
+        "placeholder": "Tulis komentar Anda tentang {{stationEmoji}} {{stationName}} di sini",
+        "fieldName": "Komentar"
+    },
+    "deleteMessage": {
+        "errored": "❌ | Saya tidak dapat menghapus pesan ini"
+    },
+    "denyButton": {
+        "usageQuestion": "❓ | Apa yang ingin Anda gunakan?",
+        "templateName": "Template",
+        "customName": "Kustom",
+        "templateQuestion": "❓ | Pilih sebuah template",
+        "templateUsed": "✅ | Template digunakan",
+        "replyName": "Balasan",
+        "replyLabel": "Konten balasan",
+        "replyPlaceholder": "Masukkan konten balasan Anda di sini",
+        "suggestionRefused": "❌ | Saran ditolak"
+    },
+    "keywords": {
+        "addKKeyword": "Tambahkan kata kunci {{keyword}}",
+        "fieldName": "Kata Kunci"
+    },
+    "manageFeedback": {
+        "stationNameModalTitle": "Stasiun",
+        "stationNameModalPlaceholder": "Harap masukkan nama stasiun",
+        "stationNameModalLabel": "Nama Stasiun",
+        "thinking": "...sedang berpikir",
+        "cannotFindStation": "❌ | Saya tidak dapat menemukan stasiun yang cocok",
+        "foundMultipleStations": "Saya menemukan **{{stationsCount}}** stasiun yang cocok",
+        "chooseAStationLabel": "Pilih sebuah stasiun",
+        "chooseStationMapping": "Stasiun {{stationName}}",
+        "cancelChooseLabel": "Batal",
+        "cancelChooseDescription": "Batal memilih",
+        "hasNoFeedback": "❌ | Stasiun [{{stationEmoji}} {{stationName}}]({{stationUrl}}) tidak memiliki umpan balik",
+        "commentSelectionText": "Dengan komentar mana Anda ingin bekerja?",
+        "commentSelectionPlaceholder": "Pilih sebuah komentar",
+        "commentMappingLabel": "Dari {{userId}}",
+        "commentMappingDescription": "Dimulai dari {{start}}",
+        "feedbackModificationTitle": "Modifikasi Umpan Balik",
+        "feedbackModificationDescription": "Anda sedang mengedit umpan balik oleh <@{{userId}}> pada stasiun [{{stationEmoji}} {{stationName}}]({{stationUrl}})",
+        "commentFieldName": "Komentar",
+        "keywordsFieldName": "Kata Kunci",
+        "commentFieldDefault": "Tidak ada komentar",
+        "commentKeywordsDefault": "Tidak ada kata kunci",
+        "addCommentModalTitle": "Penambahan Komentar",
+        "addCommentModalLabel": "Komentar",
+        "addCommentModalPlaceholder": "Tulis komentar di sini",
+        "noKeywordsToAdd": "❌ | Tidak ada kata kunci untuk ditambahkan",
+        "keywordMapping": "Kata Kunci {{keyword}}",
+        "keywordsCancelLabel": "Batal",
+        "keywordsCancelDesc": "Batal memilih",
+        "keywordsSelectionContent": "❓ | Kata kunci apa yang ingin Anda tambahkan",
+        "commentEditModalTitle": "Pengeditan Komentar",
+        "commentEditModalPlaceholder": "Tulis komentar Anda di sini",
+        "keywordsRemoveContent": "❓ | Kata kunci apa yang ingin Anda hapus?",
+        "removeKeywordsDescription": "Hapus kata kunci {{keyword}}",
+        "saved": "{{emoji}} | Stasiun [{{stationEmoji}} {{stationName}}](<{{stationUrl}}>) telah diedit"
+    },
+    "manageFeedbackButtons": {
+        "deleteFeedback": "Hapus Umpan Balik",
+        "editComment": "Sunting komentar",
+        "deleteComment": "Hapus komentar",
+        "addComment": "Tambahkan komentar",
+        "addKeywords": "Tambahkan kata kunci",
+        "deleteKeywords": "Hapus kata kunci",
+        "RemoveKeyword": "Hapus sebuah kata kunci",
+        "cancel": "Batal",
+        "save": "Simpan umpan balik"
+    },
+    "ownerRejects": {
+        "testerNotCached": "❌ | Tester tidak ada di cache. Harap coba lagi nanti",
+        "modalTitle": "Penolakan",
+        "reasonLabel": "Alasan",
+        "reasonPlaceholder": "Alasan penolakan",
+        "feedbackRejected": "❌ | Umpan balik ditolak"
+    },
+    "ownerValidate": {
+        "feedbackAdded": "✅ | Umpan balik ditambahkan"
+    },
+    "panelKeywords": {
+        "actionContent": "❓ | Aksi apa yang ingin Anda lakukan?",
+        "add": "Tambahkan",
+        "list": "Daftar",
+        "remove": "Hapus",
+        "cancel": "Batal",
+        "cantAddMoreKeywords": "❌ | Anda tidak dapat menambahkan lebih banyak kata kunci karena sudah ada 25 kata kunci, yang merupakan maksimum yang tersedia",
+        "addTitle": "Kata Kunci",
+        "addLabel": "Kata Kunci",
+        "addPlaceholder": "Kata kunci yang ingin Anda tambahkan",
+        "keywordNotFound": "❌ | Kata kunci tidak ditemukan",
+        "alreadyExists": "❌ | Sudah ada",
+        "added": "✅ | Kata kunci ditambahkan",
+        "listTitle": "Kata Kunci",
+        "listDescription": "Ada **{{listLength}}** kata kunci :\n{{list}}",
+        "listContent": "Kata Kunci",
+        "deleteContent": "❓ | Kata kunci apa yang ingin Anda hapus?",
+        "deleteDescription": "Hapus kata kunci {{keyword}}",
+        "confirmationContent": "❓ | Apakah Anda yakin ingin menghapus {{keyword}} ?",
+        "deleted": "{{emoji}} | Kata kunci {{list}} telah dihapus"
+    }
+}
