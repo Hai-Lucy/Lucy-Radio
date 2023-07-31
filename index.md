@@ -5,18 +5,14 @@ Hi, my name is Lucy. I'm always online,
 Discord bot that plays over 340 lofi music on your server.
 Music bot that plays lofi music 24/7 in your server. Very easy to use and you can set a loop mode that let the bot play music 24 hours a day and 7 days a week.
 
+Lucy Radio is a Discord bot that plays music and entertains your server members with a variety of music stations.
+It supports multiple features such as feedback collection, loop playback, and random music selection from different stations.
+
 The bot has a recommendation system and a guide command (use /guide) to guide you trough the first use.
 
 You can suggest music by using the /suggestion command.
 
 The bot is free and open source
-
-
-### Lucy Radio
-
-[Lucy Radio](https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=8&scope=applications.commands%20bot) bot's source code
-
-This repository is the source code of [Lucy Radio](https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=8&scope=applications.commands%20bot) bot
 
 ### Links
 
@@ -36,6 +32,8 @@ There's some important informations you need to know :
 
 ### ❓ Installation
 
+- [Node.js](https://nodejs.org/en/) v18.16.0
+
 If you want to use it in a personnal usage, first download yarn (if you don't have, run `npm i -g yarn`)
 
 Then you need to install the dependencies : `yarn install`
@@ -49,13 +47,20 @@ token=Your bot's token
 feedback=feedback webhook URL
 botOwner=your discord ID
 suggestChannel=music suggestions channel (for bot Owner)
-botPrefix=bot prefix (default is lf!)
+botPrefix=bot prefix (default is lucy!)
 panelChannel=ID of panel channel for the owner
 ```
 
 Compile the project : `yarn run build`
 
 And start the bot : `yarn run start`
+
+### 🐳 Docker
+
+available:
+- `lrmn/lucyradio:latest` **latest versions**
+- `lrmn/lucyradio:2.0.1`
+- `lrmn/lucyradio:1.0.0`
 
 ### 🎹 Command
 <img src="https://i.postimg.cc/0jSLL6qx/952-Zcz-Lef-Y.png" width="100%"/>

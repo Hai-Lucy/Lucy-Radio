@@ -1,18 +1,9 @@
+import express from 'express';
 import { AmethystClient } from 'amethystjs';
 import { GuildQueue, Player } from 'discord-player';
 import { ButtonBuilder, ButtonStyle, EmbedBuilder, Partials } from 'discord.js';
 import { config } from 'dotenv';
-import {
-    boolEmojis,
-    checkForDuplicates,
-    checkForEnv,
-    getLoopState,
-    getRandomStation,
-    getStationByUrl,
-    getTester,
-    row,
-    setLoopState
-} from './utils/functions';
+import { boolEmojis, checkForDuplicates, checkForEnv, getLoopState, getRandomStation, getStationByUrl, getTester, row, setLoopState } from './utils/functions';
 import { TesterButtons } from './typings/tester';
 import { queuesUsers } from './utils/maps';
 import { Langs } from './langs/Manager';
@@ -111,6 +102,21 @@ client.player.events.on('playerFinish', (queue, track) => {
     }
 });
 
+const app = express();
+app.set('view engine', 'ejs');
+
+// Route untuk web view
+app.get('/aboutme', async (req, res) => {
+    try {
+        const station = getRandomStation(); // Ganti ini dengan logika untuk mendapatkan stasiun musik acak
+        const track = await client.player.search(station.url); // Ganti ini dengan logika untuk mendapatkan lagu acak dari stasiun
+
+        res.render('aboutme', { station, track });
+    } catch (error) {
+        res.status(500).send('Error');
+    }
+});
+
 client.start({});
 
 declare module 'discord.js' {
@@ -124,3 +130,8 @@ declare module 'amethystjs' {
         player: Player;
     }
 }
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Web view is running at http://localhost:${port}/aboutme`);
+});
