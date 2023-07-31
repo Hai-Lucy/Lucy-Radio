@@ -57,7 +57,7 @@ export default new AmethystCommand({
                         topgg: 'https://top.gg/bot/1089486211376222228',
                         lucyradio:
                             interaction.client.user.id === '1089486211376222228'
-                                ? 'https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=8&scope=bot%20applications.commands'
+                                ? 'https://discord.com/oauth2/authorize?client_id=1089486211376222228&scope=bot&redirect_uri=https%3A%2F%2Flucyradio.vercel.app%2F%3Finvited%3Dyes'
                                 : inviteLink(interaction.client)
                     }),
                     inline: false

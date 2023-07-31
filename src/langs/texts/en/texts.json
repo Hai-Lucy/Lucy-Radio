@@ -88,7 +88,7 @@
         "title": "Bot informations",
         "description": "I'm a bot that can play lo-fi music in your server",
         "links": "Links",
-        "linksContent": "[Invite me]({{lucyradio}})\n[Source code](https://github.com/lrmn7/Lucy-Radio)\n[Top.gg]({{topgg}})\n[Instagram](https://www.instagram.com/romanroman.nya/)",
+        "linksContent": "[Invite me]({{lucyradio}})\n[Source code](https://github.com/Hai-Lucy/Lucy-Radio)\n[Top.gg]({{topgg}})\n[Developer](https://hello.lrmn.site/)",
         "recommendation": "❤️ Recommendation of the day"
     },
     "infoStation": {

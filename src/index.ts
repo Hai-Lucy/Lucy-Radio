@@ -45,8 +45,8 @@ export const client = new AmethystClient(
         mentionWorksAsPrefix: false,
         // Client data
         token: process.env.beta_token ? process.env.beta_token : process.env.token,
-        prefix: process.env.botPrefix ?? '!lucy',
-        botName: 'lucyradio'
+        prefix: process.env.botPrefix ?? 'lucy!',
+        botName: 'Lucy Radio'
     }
 );
 

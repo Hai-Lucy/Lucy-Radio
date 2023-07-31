@@ -88,7 +88,7 @@
         "title": "Informasi Bot",
         "description": "Saya adalah bot yang dapat memutar musik lo-fi di server Anda",
         "links": "Tautan",
-        "linksContent": "[Undang saya]({{lucyradio}})\n[Kode sumber](https://github.com/lrmn7/Lucy-Radio)\n[Top.gg]({{topgg}})\n[Instagram](https://www.instagram.com/romanroman.nya/)",
+        "linksContent": "[Undang saya]({{lucyradio}})\n[Kode sumber](https://github.com/hai-lucy/Lucy-Radio)\n[Top.gg]({{topgg}})\n[Developer](https://hello.lrmn.site/)",
         "recommendation": "❤️ Rekomendasi hari ini"
     },
     "infoStation": {

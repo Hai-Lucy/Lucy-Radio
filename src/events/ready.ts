@@ -13,26 +13,26 @@ export default new AmethystEvent('ready', async (client) => {
         async () => {
             return {
                 name: 'Lo-fi music',
-                type: ActivityType.Listening,
+                type: ActivityType.Streaming,
                 url: 'https://youtube.com/c/LofiGirl'
             };
         },
         async () => {
             await client.guilds.fetch();
             return {
-                name: `358 servers`,
-                type: ActivityType.Playing
-            };
-        },
-        async () => {
-            return {
-                name: `${stations.length} musics`,
+                name: `your heart 💗`,
                 type: ActivityType.Listening
             };
         },
         async () => {
             return {
-                name: `/lucy or /help`,
+                name: `${stations.length} musics`,
+                type: ActivityType.Playing
+            };
+        },
+        async () => {
+            return {
+                name: `lucy! or /help`,
                 type: ActivityType.Playing
             };
         },
