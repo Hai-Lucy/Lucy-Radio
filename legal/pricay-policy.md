@@ -26,4 +26,4 @@ In the case of the testers' ID, the ID cannot be edited while the bot is online,
 The cached datas, as described above, are deleted when the bot goes offline (so Server ID and user are deleted when the bot disconnects from Discord).
 
 The testers' ID are stored in a config file, so they are not deleted when the bot goes offline. However, the controler of the bot can delete these datas while the bot is online by using the control panel, wich allows him to manage datas of the bot (testers ID, available musics, feedbacks given about the songs).
-In order to remove their data, the testers can ask the bot owner to remove them, by the [support server](https://discord.gg/WFfjrQxnfH), wich is a guaranteed contact way, or by any other provided contact ways, but they are not guaranteed.
+In order to remove their data, the testers can ask the bot owner to remove them, by the [support server](https://discord.gg/fHyN5w84g6), wich is a guaranteed contact way, or by any other provided contact ways, but they are not guaranteed.

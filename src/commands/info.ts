@@ -52,12 +52,37 @@ export default new AmethystCommand({
             .setDescription(interaction.client.langs.getText(interaction, 'infoBot', 'description'))
             .setFields(
                 {
+                    name: interaction.client.langs.getText(interaction, 'infoBot', 'servers'),
+                    value: interaction.client.guilds.cache.size.toLocaleString(interaction.locale),
+                    inline: true
+                },
+                {
+                    name: interaction.client.langs.getText(interaction, 'infoBot', 'members'),
+                    value: interaction.client.guilds.cache
+                        .map((x) => x.memberCount)
+                        .reduce((a, b) => a + b)
+                        .toLocaleString(interaction.locale),
+                    inline: true
+                },
+                {
+                    name: interaction.client.langs.getText(interaction, 'infoBot', 'playingIn'),
+                    value: interaction.client.langs.getText(interaction, 'infoBot', 'playingInContent', {
+                        count: interaction.client.player.queues.cache.filter((x) => x.node.isPlaying()).size
+                    }),
+                    inline: true
+                },
+                {
+                    name: interaction.client.langs.getText(interaction, 'infoBot', 'stations'),
+                    value: stations.length.toLocaleString(interaction.locale),
+                    inline: false
+                },
+                {
                     name: interaction.client.langs.getText(interaction, 'infoBot', 'links'),
                     value: interaction.client.langs.getText(interaction, 'infoBot', 'linksContent', {
-                        topgg: 'https://top.gg/bot/1089486211376222228',
+                        topgg: 'https://top.gg/bot/1089486211376222228/',
                         lucyradio:
                             interaction.client.user.id === '1089486211376222228'
-                                ? 'https://discord.com/oauth2/authorize?client_id=1089486211376222228&scope=bot&redirect_uri=https%3A%2F%2Flucyradio.vercel.app%2F%3Finvited%3Dyes'
+                                ? 'https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=2150910208&scope=bot%20applications.commands'
                                 : inviteLink(interaction.client)
                     }),
                     inline: false

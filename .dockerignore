@@ -1,7 +1,33 @@
-
-node_modules
-dist
-legal
-index.md
-.github
+node_modules/
+dist# Ignore editor and IDE files
+.vscode/
+.idea/
 .env
+dist/
+server/
+dist
+
+# Ignore temporary files
+*.swp
+*~
+
+# Ignore build artifacts
+target/
+build/
+
+# Ignore node_modules for Node.js projects
+node_modules/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore local configuration files
+config.yaml
+
+# Ignore sensitive data
+secrets/
+
+# Ignore logs and other generated files
+logs/
+*.log

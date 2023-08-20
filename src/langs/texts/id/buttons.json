@@ -1,9 +1,9 @@
 {
     "deleteMessage": {
-        "label": "Hapus Pesan"
+        "label": "Hapus pesan ini"
     },
     "yes": {
-        "label": "Oke"
+        "label": "Ya"
     },
     "no": {
         "label": "Tidak"

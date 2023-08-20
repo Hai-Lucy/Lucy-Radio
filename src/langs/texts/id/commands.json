@@ -1,45 +1,45 @@
 {
     "play": {
-        "name": "putar",
+        "name": "play",
         "description": "Putar Musik Lofi",
         "options": {
             "station": {
-                "name": "stasiun",
+                "name": "station",
                 "description": "Stasiun yang akan diputar"
             }
         }
     },
     "add": {
-        "name": "tambah",
-        "description": "Tambahkan stasiun ke antrian",
+        "name": "add",
+        "description": "Tambahkan stasiun ke dalam antrian",
         "options": {
             "station": {
-                "name": "stasiun",
-                "description": "Stasiun yang akan ditambahkan ke antrian"
+                "name": "station",
+                "description": "Stasiun yang akan ditambahkan ke dalam antrian"
             }
         }
     },
     "autoadd": {
         "name": "autoadd",
-        "description": "Toggle penambahan musik otomatis di akhir musik",
+        "description": "Aktifkan atau nonaktifkan penambahan musik secara otomatis setelah musik selesai",
         "options": {}
     },
     "find": {
-        "name": "cari",
-        "description": "Cari beberapa stasiun yang Anda sukai menggunakan tag",
+        "name": "find",
+        "description": "Cari beberapa stasiun yang Anda sukai dengan menggunakan tag",
         "options": {
             "tags": {
-                "name": "tag",
+                "name": "tags",
                 "description": "Tag yang ingin Anda cari"
             }
         }
     },
     "help": {
-        "name": "bantuan",
+        "name": "help",
         "description": "Tampilkan halaman bantuan",
         "options": {
             "command": {
-                "name": "perintah",
+                "name": "command",
                 "description": "Perintah untuk menampilkan bantuan"
             }
         }
@@ -50,31 +50,31 @@
         "options": {
             "bot": {
                 "name": "bot",
-                "description": "Tampilkan informasi bot"
+                "description": "Tampilkan informasi tentang bot"
             },
             "station": {
-                "name": "stasiun",
-                "description": "Tampilkan informasi stasiun"
+                "name": "station",
+                "description": "Tampilkan informasi tentang stasiun"
             },
             "stationOption": {
-                "name": "stasiun",
+                "name": "station",
                 "description": "Stasiun yang akan ditampilkan"
             }
         }
     },
     "leave": {
-        "name": "tinggalkan",
+        "name": "leave",
         "description": "Keluar dari saluran suara",
         "options": {}
     },
     "playing": {
-        "name": "sedang-putar",
-        "description": "Tampilkan musik saat ini",
+        "name": "playing",
+        "description": "Tampilkan musik yang sedang diputar",
         "options": {}
     },
     "suggestion": {
-        "name": "saran",
-        "description": "Sarankan musik lofi ke bot",
+        "name": "suggestion",
+        "description": "Berikan saran musik lofi ke bot",
         "options": {
             "url": {
                 "name": "url",
@@ -83,12 +83,12 @@
         }
     },
     "switch": {
-        "name": "ganti",
-        "description": "Beralih ke stasiun musik lain",
+        "name": "switch",
+        "description": "Pindah ke stasiun musik lain",
         "options": {
             "station": {
-                "name": "stasiun",
-                "description": "Stasiun yang akan diganti"
+                "name": "station",
+                "description": "Stasiun yang akan dipindahkan ke"
             }
         }
     },
@@ -103,8 +103,8 @@
         }
     },
     "guide": {
-        "name": "panduan",
-        "description": "Tampilkan panduan Lucy Radio bot",
+        "name": "guide",
+        "description": "Tampilkan panduan bot Lucy Radio",
         "options": {}
     }
 }

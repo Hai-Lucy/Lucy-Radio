@@ -1,13 +1,21 @@
-import express from 'express';
 import { AmethystClient } from 'amethystjs';
 import { GuildQueue, Player } from 'discord-player';
 import { ButtonBuilder, ButtonStyle, EmbedBuilder, Partials } from 'discord.js';
 import { config } from 'dotenv';
-import { boolEmojis, checkForDuplicates, checkForEnv, getLoopState, getRandomStation, getStationByUrl, getTester, row, setLoopState } from './utils/functions';
+import {
+    boolEmojis,
+    checkForDuplicates,
+    checkForEnv,
+    getLoopState,
+    getRandomStation,
+    getStationByUrl,
+    getTester,
+    row,
+    setLoopState
+} from './utils/functions';
 import { TesterButtons } from './typings/tester';
 import { queuesUsers } from './utils/maps';
 import { Langs } from './langs/Manager';
-import ejs from 'ejs';
 
 config();
 
@@ -37,7 +45,7 @@ export const client = new AmethystClient(
         mentionWorksAsPrefix: false,
         // Client data
         token: process.env.beta_token ? process.env.beta_token : process.env.token,
-        prefix: process.env.botPrefix ?? 'lucy!',
+        prefix: process.env.botPrefix ?? 'lf!',
         botName: 'Lucy Radio'
     }
 );
@@ -103,79 +111,6 @@ client.player.events.on('playerFinish', (queue, track) => {
     }
 });
 
-const app = express();
-app.set('view engine', 'ejs');
-
-const webviewTemplate = `
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Web View</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background-image: url("https://cdn.discordapp.com/attachments/1098969636306960465/1134839228686143538/lucyyya.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 600px;
-            padding: 20px;
-            background-color: transparent;
-            border-radius: 10px;
-            color: #DBDBE0;
-        }
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .link {
-            margin-top: 10px;
-            text-decoration: none;
-            color: #81e967;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img class="avatar" src="https://cdn.discordapp.com/attachments/1098969636306960465/1134835792355799120/lucy1asd.png" alt="Bot Avatar">
-        <h1>Lucy Radio</h1>
-        <p>
-            Lucy Radio is a Discord bot that plays music and entertains your server members with a variety of music stations.
-            It supports multiple features such as feedback collection, loop playback, and random music selection from different stations.
-        </p>
-
-        <a class="link" href="https://lucyradio.vercel.app">Visit Our Website</a>
-        <br><br>
-        <a class="link" href="https://github.com/hai-lucy">GitHub</a>
-    </div>
-</body>
-</html>
-`;
-
-app.get('/', async (req, res) => {
-    try {
-        const station = getRandomStation(); // Ganti ini dengan logika untuk mendapatkan stasiun musik acak
-        const track = await client.player.search(station.url); // Ganti ini dengan logika untuk mendapatkan lagu acak dari stasiun
-
-        const renderedHtml = ejs.render(webviewTemplate, { station, track });
-        res.send(renderedHtml);
-    } catch (error) {
-        res.status(500).send('Error');
-    }
-});
-
 client.start({});
 
 declare module 'discord.js' {
@@ -189,8 +124,3 @@ declare module 'amethystjs' {
         player: Player;
     }
 }
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`Web view is running at http://localhost:${port}`);
-});

@@ -42,7 +42,7 @@ export default new AmethystCommand({
         .addFields({
             name: interaction.client.langs.getText(interaction, 'guide', 'suggestionsName'),
             value: interaction.client.langs.getText(interaction, 'guide', 'suggestions', {
-                lofi: 'https://youtube.com/c/LofiGirl',
+                lucy: 'https://youtube.com/c/LofiGirl',
                 suggestion: getCmd('suggestion')
             }),
             inline: false
@@ -53,7 +53,7 @@ export default new AmethystCommand({
         embed.addFields({
             name: "Lucy Radio",
             value: interaction.client.langs.getText(interaction, 'guide', 'lucyradio', {
-                link: 'https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=8&scope=bot%20applications.commands'
+                link: 'https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=2150910208&scope=bot%20applications.commands'
             })
         });
     }

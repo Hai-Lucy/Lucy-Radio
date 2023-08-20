@@ -14,7 +14,7 @@ export default new AmethystCommand({
             name: 'volume',
             description: 'Amount of the volume',
             minValue: 0,
-            maxValue: 80,
+            maxValue: 100,
             type: ApplicationCommandOptionType.Integer,
             required: true,
             nameLocalizations: locals.options.volume.name,

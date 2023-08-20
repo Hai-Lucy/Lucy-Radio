@@ -12,33 +12,27 @@ export default new AmethystEvent('ready', async (client) => {
     const statuses: (() => Promise<ActivityOptions>)[] = [
         async () => {
             return {
-                name: 'Lo-fi music',
-                type: ActivityType.Streaming,
+                name: 'Lofi music',
+                type: ActivityType.Playing,
                 url: 'https://youtube.com/c/LofiGirl'
             };
         },
         async () => {
             await client.guilds.fetch();
             return {
-                name: `your heart 💗`,
+                name: `your heart 💝`,
                 type: ActivityType.Listening
             };
         },
         async () => {
             return {
                 name: `${stations.length} musics`,
-                type: ActivityType.Playing
+                type: ActivityType.Listening
             };
         },
         async () => {
             return {
-                name: `lucy! or /help`,
-                type: ActivityType.Playing
-            };
-        },
-        async () => {
-            return {
-                name: `With 💗 by L RMN`,
+                name: `by L RMN`,
                 type: ActivityType.Watching
             };
         }

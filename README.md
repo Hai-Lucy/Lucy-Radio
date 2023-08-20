@@ -1,28 +1,21 @@
-<img src="https://i.postimg.cc/J0Fy02yM/lucy.png" width="300"/>
 
-### 👋 Introduction
-Hi, my name is Lucy. I'm always online, 
-Discord bot that plays over 340 lofi music on your server.
-Music bot that plays lofi music 24/7 in your server. Very easy to use and you can set a loop mode that let the bot play music 24 hours a day and 7 days a week.
+# lofi-girl
 
-Lucy Radio is a Discord bot that plays music and entertains your server members with a variety of music stations.
-It supports multiple features such as feedback collection, loop playback, and random music selection from different stations.
+[Lofi girl](https://discord.com/oauth2/authorize?client_id=1037028318404419596&permissions=277028554752&scope=bot%20applications.commands) bot's source code
 
-The bot has a recommendation system and a guide command (use /guide) to guide you trough the first use.
+This repository is the source code of [Lofi Girl](https://discord.com/oauth2/authorize?client_id=1037028318404419596&permissions=277028554752&scope=bot%20applications.commands) bot
 
-You can suggest music by using the /suggestion command.
+The bot uses [Amethyst JS framework](https://npmjs.com/package/amethystjs)
 
-The bot is free and open source
+## Links
 
-### Links
+Here are the usefull links for [Lofi Girl](https://top.gg/bot/1037028318404419596) :
 
-Here are the usefull links for [Lucy Radio](https://top.gg/bot/1089486211376222228) :
+* [Top.gg page](https://top.gg/bot/1037028318404419596/)
+* [Bot invitation](https://discord.com/oauth2/authorize?client_id=1037028318404419596&permissions=277028554752&scope=bot%20applications.commands)
+* [Support server](https://discord.gg/fHyN5w84g6)
 
-* [Top.gg page](https://top.gg/bot/1089486211376222228/)
-* [Bot invitation](https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=8&scope=applications.commands%20bot)
-* [Support server](https://discord.gg/WFfjrQxnfH)
-
-### Important informations
+## Important informations
 
 There's some important informations you need to know :
 
@@ -30,9 +23,7 @@ There's some important informations you need to know :
 * For now the bot is still in developpement
 * The code is open source and you can use it as you want
 
-### ❓ Installation
-
-- [Node.js](https://nodejs.org/en/) v18.16.0
+## Installation
 
 If you want to use it in a personnal usage, first download yarn (if you don't have, run `npm i -g yarn`)
 
@@ -47,7 +38,7 @@ token=Your bot's token
 feedback=feedback webhook URL
 botOwner=your discord ID
 suggestChannel=music suggestions channel (for bot Owner)
-botPrefix=bot prefix (default is lucy!)
+botPrefix=bot prefix (default is lf!)
 panelChannel=ID of panel channel for the owner
 ```
 
@@ -55,15 +46,7 @@ Compile the project : `yarn run build`
 
 And start the bot : `yarn run start`
 
-### 🐳 Docker
-
-available:
-- `lrmn/lucyradio:latest` **latest versions**
-- `lrmn/lucyradio:2.0.1`
-- `lrmn/lucyradio:1.0.0`
-
-### 🎹 Command
-<img src="https://i.postimg.cc/0jSLL6qx/952-Zcz-Lef-Y.png" width="100%"/>
+### Command
 
 There's a npm script that you can use to check if the `configs.json` file contains duplicated files
 
@@ -73,12 +56,9 @@ The script will build the project and check for duplicates.
 
 If a station is duplicated, it will throw an error.
 
-### 📔 Panel
-<img src="https://i.postimg.cc/NMzzQZqQ/panel.png" width="100%"/>
+## Panel
 
 There is a panel to control the bot
 
 It will be sent in the channel defined by the `panelChannel` field in [`.env`](./.env.example) file
-
-___
-<img src="https://i.postimg.cc/4yTYC9hQ/my-dress-up-darling-anime-love.gif" width="40"/> end of the page, dork	-	<img src="https://i.postimg.cc/jdbbyY3Z/1544979629657.gif" width="30"/>**L RMN** on Discord for questions/help 💕 <img src="https://i.postimg.cc/4yTYC9hQ/my-dress-up-darling-anime-love.gif" width="40"/>
+![panel](https://media.discordapp.net/attachments/1062408280191807581/1082330474485137528/image.png)
