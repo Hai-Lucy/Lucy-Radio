@@ -1,5 +1,5 @@
-
-FROM node:18
+# Setup image for building Typescript
+FROM node:18 as builder
 
 
 WORKDIR /usr/src/app
