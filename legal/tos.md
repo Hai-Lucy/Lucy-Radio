@@ -12,7 +12,7 @@ Any connection to Lofi Girl channel or its trademarks objects is purely coincide
 
 ## Intellectual Proprety Rights
 
-The source code of the bot is in open source, it means that anyone can use it. However, if you use the code to impersonate the [Lofi Girl bot](https://discord.com/oauth2/authorize?client_id=1037028318404419596&permissions=277028554752&scope=bot%20applications.commands), we will report you. Any abuse of the source code will be punished.
+The source code of the bot is in open source, it means that anyone can use it. However, if you use the code to impersonate the [Lofi Girl bot](https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=137476172864&scope=applications.commands%20bot), we will report you. Any abuse of the source code will be punished.
 
 ## Liability
 
@@ -24,4 +24,4 @@ you may opt out by removing the bot from any server you have the rights for.
 
 ## Contacts
 
-You can contact the [official support here](https://discord.gg/fHyN5w84g6) or by the [top.gg page](https://top.gg/bot/1037028318404419596) in the "support server" section. Other ways can be provided, but they are not guaranteed.
+You can contact the [official support here](https://discord.gg/WFfjrQxnfH) or by the [top.gg page](https://top.gg/bot/1089486211376222228) in the "support server" section. Other ways can be provided, but they are not guaranteed.
