@@ -1,8 +1,8 @@
-# Setup image for building Typescript
-FROM node:18 as builder
+
+FROM node:18
 
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 
 COPY package*.json yarn.lock ./
