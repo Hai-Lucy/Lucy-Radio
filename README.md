@@ -1,19 +1,19 @@
 
-# lofi-girl
+# Lucy Radio
 
-[Lofi girl](https://discord.com/oauth2/authorize?client_id=1037028318404419596&permissions=277028554752&scope=bot%20applications.commands) bot's source code
+[Lucy Radio](https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=137476172864&scope=applications.commands%20bot) bot's source code
 
-This repository is the source code of [Lofi Girl](https://discord.com/oauth2/authorize?client_id=1037028318404419596&permissions=277028554752&scope=bot%20applications.commands) bot
+This repository is the source code of [Lucy Radio](https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=137476172864&scope=applications.commands%20bot) bot
 
 The bot uses [Amethyst JS framework](https://npmjs.com/package/amethystjs)
 
 ## Links
 
-Here are the usefull links for [Lofi Girl](https://top.gg/bot/1037028318404419596) :
+Here are the usefull links for [Lucy Radio](https://top.gg/bot/1089486211376222228) :
 
-* [Top.gg page](https://top.gg/bot/1037028318404419596/)
-* [Bot invitation](https://discord.com/oauth2/authorize?client_id=1037028318404419596&permissions=277028554752&scope=bot%20applications.commands)
-* [Support server](https://discord.gg/fHyN5w84g6)
+* [Top.gg page](https://top.gg/bot/1089486211376222228/)
+* [Bot invitation](https://discord.com/api/oauth2/authorize?client_id=1089486211376222228&permissions=137476172864&scope=applications.commands%20bot)
+* [Support server](https://discord.gg/WFfjrQxnfH)
 
 ## Important informations
 
@@ -61,4 +61,4 @@ If a station is duplicated, it will throw an error.
 There is a panel to control the bot
 
 It will be sent in the channel defined by the `panelChannel` field in [`.env`](./.env.example) file
-![panel](https://media.discordapp.net/attachments/1062408280191807581/1082330474485137528/image.png)
+![panel](https://cdn.discordapp.com/attachments/1129523600135835730/1143130566921822208/Screenshot_2023-08-21_173410.png)
